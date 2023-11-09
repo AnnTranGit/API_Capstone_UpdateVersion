@@ -38,7 +38,9 @@
     <header class="">
       <div class="logo">
         <div class="container">
-          <img src="/assets/img/image 3.png" alt="" />
+          <a href="/">
+            <img src="/assets/img/image 3.png" alt="" />
+          </a>
           <nav>
             <img src="/assets/img/Group 1.png" alt="" />
             <a href="#">Login</a>
@@ -82,7 +84,7 @@
             <p>Email</p>
             <input class="form-control" id="email" />
             <p id="error-required-email" class="text text-danger"></p>
-            <p id="error-min-max-length-email" class="text text-danger"></p>
+            <p id="error-letter-email" class="text text-danger"></p>
           </div>
           <div class="col-6">
             <p>Name</p>
@@ -96,11 +98,13 @@
             <p>Password</p>
             <input class="form-control" id="password" type="password" />
             <p id="error-required-password" class="text text-danger"></p>
+            <p id="error-letter-password" class="text text-danger"></p>
           </div>
           <div class="col-6">
             <p>Phone Number</p>
             <input class="form-control" id="phone" />
             <p id="error-required-phone" class="text text-danger"></p>
+            <p id="error-phone-number" class="text text-danger"></p>
           </div>
         </div>
         <div class="row">
@@ -221,5 +225,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./controllers/JS/UserRegister.js"></script>
+    <script src="/assets/lib/value.js"></script>
+    <script src="/controllers/JS/register.js"></script>
   </body>
 </html>
