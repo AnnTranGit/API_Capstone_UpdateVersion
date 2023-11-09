@@ -64,19 +64,17 @@ function productDetail(product) {
     var relatedProduct = relatedProductsList[i];
     relatedProductsHTML += `
     <div class="col-md-4 p-5">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="${relatedProduct.image}" alt="${relatedProduct.name}">
-          <div class="card-body">
-            <h5 class="card-title">${relatedProduct.name}</h5>
-            <p class="card-text">${relatedProduct.shortDescription}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Buy Now</button>
-              </div>
-              <p class="text-muted">$${relatedProduct.price}</p>
-            </div>
-          </div>
-        </div>
+    <div class = "card">
+    <img src="${relatedProduct.image}" id="${relatedProduct.id}" alt="${relatedProduct.alias}" style ="width:100%">
+    <div class = "card-body">
+    <h3>${relatedProduct.name}</h3>
+    <p>${relatedProduct.shortDescription}</p>
+    <div class= "d-flex">
+    <button class = "btn btn-warning w-50 me-1">Buy Now</button>
+    <button class = "btn btn-light w-50 ms-1">$${relatedProduct.price}</button>
+    </div>
+    </div>
+    </div>
       </div>
 
   `;

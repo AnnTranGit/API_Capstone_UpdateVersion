@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header .logo {
+  background-color: black;
+  padding: 10px 0;
+}
+header .logo div {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo div nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+header .menu a.nav-item.nav-link.active::after {
+  content: "";
+  height: 3px;
+  width: 42px;
+  background-color: black;
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+}
+
+footer div div.col-md-4 {
+  width: 30%;
+}
+footer div div.col-md-4 h5 {
+  font-weight: bold;
+}
+footer div div.col-md-4 ul {
+  padding-left: 0;
+}
+footer div div.col-md-4 ul li {
+  list-style: none;
+}/*# sourceMappingURL=register.css.map */
