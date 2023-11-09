@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Details</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/product-detail.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-black">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/img/image 3.png"
+            alt="Logo"
+            width="100"
+            height="40"
+          />
+        </a>
+
+        <!-- Giỏ hàng, Login, Register -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-shopping-cart text-white"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Man</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sport</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <div id="productDetails" class=""></div>
+
+    <!-- Related Products -->
+    <div class="related-products container">
+      <div class="relatedContent text-center">
+        <h2 class>Related Product</h2>
+      </div>
+      <div id="relatedProducts" class="row"></div>
+    </div>
+
+    <footer class="mt-5">
+      <div class="pt-2">
+        <div class="container d-flex justify-content-evenly">
+          <div class="col-md-4">
+            <h5>GET HELP</h5>
+            <ul>
+              <li>Contact us</li>
+              <li>Shopping</li>
+              <li>NIKEiD</li>
+              <li>Nike+</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>ORDERS</h5>
+            <ul>
+              <li>Payment Option</li>
+              <li>Shopping and delivery</li>
+              <li>Returns</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>REGISTER</h5>
+            <ul>
+              <li>Create one account to manage everything you do with Nike</li>
+              <li class="text-danger">Learn more</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-4">
+        <div class="container d-flex justify-content-evenly">
+          <div class="col-md-4">
+            <h5>EMAIL SIGN UP</h5>
+            <ul>
+              <li>
+                Be the first one to know about new products and special offers
+              </li>
+              <li class="text-danger">Sign up now</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>GIFT CARDS</h5>
+            <ul>
+              <li>Give the gift that always fits</li>
+              <li class="text-danger">View cards</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>STORES NEAR YOU</h5>
+            <ul>
+              <li>Locate a Nike retail store or authorized retailer</li>
+              <li class="text-danger">Search</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+      integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/controllers/JS/product-detail.js"></script>
+  </body>
+</html>

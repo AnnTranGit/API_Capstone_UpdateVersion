@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header .logo {
+  background-color: black;
+  padding: 10px 0;
+}
+header .logo div {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo div nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+header .menu a.nav-item.nav-link.active::after {
+  content: "";
+  height: 3px;
+  width: 42px;
+  background-color: black;
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+}
+
+.banner-wrapper {
+  background: url(/Images_index/image\ 6.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.banner-wrapper .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-wrapper .banner div img {
+  width: 100%;
+}
+.banner-wrapper .banner .product-information {
+  width: 37%;
+}
+.banner-wrapper .banner .product-information p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.products h3.title {
+  text-align: center;
+  margin-top: 10px;
+}
+.products #content-product {
+  margin: 0 auto;
+}
+.products #content-product div .card .card-body h3 {
+  font-size: 1.5rem;
+}
+.products #content-product div .card .card-body p {
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+footer div div.col-md-4 {
+  width: 30%;
+}
+footer div div.col-md-4 h5 {
+  font-weight: bold;
+}
+footer div div.col-md-4 ul {
+  padding-left: 0;
+}
+footer div div.col-md-4 ul li {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

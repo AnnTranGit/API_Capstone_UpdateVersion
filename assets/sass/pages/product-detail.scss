@@ -1,0 +1,90 @@
+// Reset some default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(0deg, #000000, #000000),
+      linear-gradient(0deg, #030303, #030303);
+    top: calc(100% - 2px); // Chân dưới
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.related-products {
+  padding: 50px 0;
+
+  .relatedContent {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .btn-group {
+      button {
+        padding: 5px 15px;
+        font-size: 14px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
