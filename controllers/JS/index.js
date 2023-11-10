@@ -31,7 +31,7 @@ const renderProductData = async () => {
         <h3>${product.name}</h3>
         <p>${product.shortDescription}</p>
         <div class= "d-flex">
-        <button class = "btn btn-warning w-50 me-1">Buy Now</button>
+        <a href="./product-detail.html?productid=${product.id}" class="w-50 p-2 text-center  bg-warning text-decoration-none text-black rounded ">BUY NOW</a>
         <button class = "btn btn-light w-50 ms-1">$${product.price}</button>
         </div>
         </div>
@@ -77,3 +77,7 @@ const updateProductInfo = async () => {
 };
 
 updateProductInfo();
+
+window.onload = function () {
+  getProductData();
+};

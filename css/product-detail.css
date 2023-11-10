@@ -1,29 +1,37 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+header .logo {
+  background-color: black;
+  padding: 10px 0;
 }
-
-.navbar-nav .nav-item {
-  position: relative;
+header .logo div {
+  display: flex;
+  justify-content: space-between;
 }
-.navbar-nav .nav-item:before {
+header .logo div nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+header .menu a.nav-item.nav-link.active::after {
   content: "";
+  height: 3px;
+  width: 42px;
+  background-color: black;
   position: absolute;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(0deg, #000000, #000000), linear-gradient(0deg, #030303, #030303);
-  top: calc(100% - 2px);
-  left: 0;
-  transition: width 0.3s ease;
+  bottom: 12px;
+  left: 8px;
 }
-.navbar-nav .nav-item:hover:before {
-  width: 100%;
+
+.btn-check:checked + .btn {
+  background-color: #ffc107;
+  color: #000;
+  border-color: transparent;
 }
 
 .related-products {
@@ -50,6 +58,7 @@ body {
 .related-products .card .card-title {
   font-size: 20px;
   font-weight: bold;
+  height: 66px;
 }
 .related-products .card .card-text {
   font-size: 16px;
@@ -70,4 +79,36 @@ body {
 }
 .related-products .card:hover {
   transform: scale(1.05);
+}
+
+footer div div.col-md-4 {
+  width: 30%;
+}
+footer div div.col-md-4 h5 {
+  font-weight: bold;
+}
+footer div div.col-md-4 ul {
+  padding-left: 0;
+}
+footer div div.col-md-4 ul li {
+  list-style: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: #555;
 }/*# sourceMappingURL=product-detail.css.map */
